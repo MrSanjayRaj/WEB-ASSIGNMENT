@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            html,
+            body {
+                height: 100%;
+                overflow: hidden;
+            }
+
+            #demo {
+                height: 100%;
+                width: 100%;
+                background-color: #222831;
+            }
+
+            #info {
+                padding-left: 10px;
+                border-radius: 10px;
+                position: absolute;
+                user-select: none;
+                font-size: 2em;
+                width: 120px;
+                color: #eeeeee;
+                background-color: #fd7013;
+            }
+        </style>
+    </head>
+    <body>
+        <div onmousemove="getCursor(event)" id="demo">
+            <div id="info"></div>
+        </div>
+    </body>
+    <script>
+        function getCursor(event) {
+            let x = event.clientX;
+            let y = event.clientY;
+            let _position = `X: ${x}<br>Y: ${y}`;
+
+            const infoElement = document.getElementById("info");
+            infoElement.innerHTML = _position;
+            infoElement.style.top = y + "px";
+            infoElement.style.left = x + 20 + "px";
+        }
+    </script>
+</html>

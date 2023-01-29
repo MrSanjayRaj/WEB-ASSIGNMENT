@@ -1,0 +1,12 @@
+table,
+tr,
+td {
+    border: solid black;
+    width: 33%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: lightblue;
+}
+table {
+    margin: auto;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating AJAX methods</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#load").click(function () {
+                $("div").load("Uploads/Assgn4.6_FileToBeLoaded.txt");
+            });
+            $("#get").click(function () {
+                $.get("Uploads/FileToBeGet.txt", function (data, status) {
+                    alert("Data : " + data + "\nStatus : " + status);
+                });
+            });
+            $("#post").click(function () {
+                $.post("demo_test_post.aspx", {
+                        name: "Donald Duck",
+                        city: "Duckburg"
+                    },
+                    function (data, status) {
+                        alert("Data: " + data + "\nStatus: " + status);
+                    });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Demonstrating AJAX Methods Load(), Get() & Post() Using JQuery</h1>
+    <div>Default Text</div>
+    <br>
+    <button id="load">Load</button>
+    55
+    <button id="get">Get</button>
+    <button id="post">Post</button>
+</body>
+
+</html>

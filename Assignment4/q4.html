@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating mouse over and mouse click event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").mouseover(function () {
+                $("img").width(1200);
+                $("img").height(900);
+            });
+            $("img").click(function () {
+                $("img").attr("src",
+                    "https://imgv3.fotor.com/images/blog-cover-image/part-blurry-image.jpg");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Demonstrating Mouse Over And Mouse Click Event Using JQuery</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_m
+obile_phone.png/1200px-Image_created_with_a_mobile_phone.png" height="300" width="400">
+</body>
+
+</body>
+
+</html>

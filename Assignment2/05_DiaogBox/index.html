@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt & Confirm DB</title>
+    <script>
+        function callPrompt() {
+            var name = prompt("Enter Your Name");
+            callConfirm(name);
+        }
+
+        function callConfirm(name) {
+            var check = confirm("Confirm your name as : " + name);
+            (check) ? document.write("Welcome " + name): callPrompt();
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Prompt & Confirm Dialog Box</h2>
+        <button onclick="callPrompt()">Start Sequence</button>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marksheet</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0px;
+        }
+
+        table,
+        tr,
+        th {
+            font-size: 16px;
+
+        }
+
+        td,
+        th {
+            padding: 5px;
+            text-align: center;
+
+        }
+
+        .subject {
+            text-align: left;
+        }
+
+        .calculation {
+            text-align: right;
+        }
+
+        #details td,
+        #details th {
+            text-align: left;
+            font-size: 15px
+        }
+
+        .footer {
+            padding: 30px 45px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Marksheet Using Table Tag -->
+    <div style="width: 800px; border: 2px solid black; margin: 30px auto;padding: 20px;">
+
+
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <img style="height: 70px; margin: 0px 10px;"
+                    src="https://pbs.twimg.com/profile_images/1256121745062465536/phv-td2l_400x400.png" alt="">
+            </div>
+            <div style="text-align: center;">
+                <h1 style="text-align: center;">JAI NARAIN VYAS UNIVERSITY, JODHPUR</h1>
+                <span>B.C.A Final Year Examination 2022(REGULAR)</span>
+                <h3>PROVISIONAL MARKSHEET</h3>
+            </div>
+        </div>
+
+        <div style="display:flex; justify-content: center;" id="details">
+            <table>
+                <tr>
+                    <th>
+                        CANDIDATE'S NAME :
+                    </th>
+                    <td>
+                        RAJPUTOHIT SANJAY SINGH
+                    </td>
+                    <th>
+                        ROLL NO :
+                    </th>
+                    <td>
+                        20BCA50337
+                    </td>
+                    <td rowspan="3"><img height="90px" width="80px" style="border-radius:10px; margin-top: -10px;"
+                            src="./sanjay.jpg" alt=""></td>
+                </tr>
+
+                <tr>
+                    <th>
+                        FATHER'S NAME :
+                    </th>
+                    <td>
+                        GAJENDRA SINGH RAJPUROHIT
+                    </td>
+                    <th>
+                        ENROLLMENT NO :
+                    </th>
+                    <td>
+                        19R/42620
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        MOTHER'S NAME :
+                    </th>
+                    <td>
+                        KAILASH DEVI
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div style="display:flex; justify-content: center; ">
+            <table border="2" style="border-collapse: collapse; ">
+                <thead>
+                    <tr>
+                        <th>SUBJECTS</th>
+                        <th>MAX<br />MKS.</th>
+                        <th>MIN<br />MKS.</th>
+                        <th>THEO<br />OBT.</th>
+                        <th>PRAC<br />OBT.</th>
+                        <th>INT<br />OBT.</th>
+                        <th>SUB<br />TOTAL</th>
+                        <th style="padding: 0px 20px;">STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="subject">BCA 301 JAVA PROGRAMMING</td>
+                        <td>100</td>
+                        <td>35</td>
+                        <td>41</td>
+                        <td></td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="subject">BCA 302 MULTIMEDIA TOOLS</td>
+                        <td>100</td>
+                        <td>35</td>
+                        <td>40</td>
+                        <td></td>
+                        <td>19</td>
+                        <td>71</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="subject">BCA 303 COMPUTER NETWORKS</td>
+                        <td>100</td>
+                        <td>35</td>
+                        <td>52</td>
+                        <td></td>
+                        <td>19</td>
+                        <td>71</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="subject">BCA 304 WEB TECHNOLOGIES</td>
+                        <td>100</td>
+                        <td>35</td>
+                        <td>41</td>
+                        <td></td>
+                        <td>17</td>
+                        <td>58</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="subject">BCA 305 SYSTEM ANALYTICS & DEGINE</td>
+                        <td>100</td>
+                        <td>35</td>
+                        <td>40</td>
+                        <td></td>
+                        <td>17</td>
+                        <td>57</td>
+                        <td></td>
+                    </tr>
+                    <var>
+                        <tr>
+                            <td class="subject">BCA 306 COMMUNICATION SKILLS</td>
+                            <td>100</td>
+                            <td>35</td>
+                            <td>53</td>
+                            <td></td>
+                            <td>16</td>
+                            <td>69</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="calculation">THEORY TOTAL</th>
+                            <th>600</th>
+                            <th>210</th>
+                            <th>267</th>
+                            <th></th>
+                            <th>108</th>
+                            <th>375</th>
+                            <th>P</th>
+                        </tr>
+                        <tr>
+                            <td class="subject">BCA 307 JAVA LAB</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td></td>
+                            <td>72</td>
+                            <td>19</td>
+                            <td>91</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject">BCA 308 ASP.NET LAB</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td></td>
+                            <td>68</td>
+                            <td>19</td>
+                            <td>87</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject">BCA 309 PROJECT WORK</td>
+                            <td>100</td>
+                            <td>80</td>
+                            <td></td>
+                            <td>146</td>
+                            <td>39</td>
+                            <td>185</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject">BCA 310 SEMINAR</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td></td>
+                            <td>71</td>
+                            <td>19</td>
+                            <td>90</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject">BCA 310 SEMINAR</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td></td>
+                            <td>71</td>
+                            <td>19</td>
+                            <td>90</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="calculation">PRACTICAL TOTAL</th>
+                            <th>500</th>
+                            <th>200</th>
+                            <th></th>
+                            <th>357</th>
+                            <th>96</th>
+                            <th>453</th>
+                            <th>P</th>
+                        </tr>
+                        <tr>
+                            <th class="calculation">YEAR TOTAL : </th>
+                            <th>1100</th>
+                            <th>440</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>828</th>
+                            <th>PASS</th>
+                        </tr>
+                        <tr>
+                            <th class="calculation">1st YEAR MARKS</th>
+                            <th>900</th>
+                            <th colspan="4"></th>
+                            <th>667</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th class="calculation">2nd YEAR MARKS</th>
+                            <th>1000</th>
+                            <th colspan="4"></th>
+                            <th>712</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th class="calculation">GRAND TOTAL</th>
+                            <th>3000</th>
+                            <th colspan="4"></th>
+                            <th>2207</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th colspan="8"> RESULT : FIRST</th>
+                        </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="footer">
+            <p> <b>RESULT DECLARATION DATE : </b> 09-09-2022 <br />
+                <b> JODHPUR <br />
+                    Collage of study : (105) G.D. MEMORIAL COLLAGE, JODHPUR</b>
+            </p>
+
+            <p><b>NOTE - This is a Computer generated marksheet, dosen't require signature</b> </p>
+        </div>
+    </div>
+</body>
+
+</html>

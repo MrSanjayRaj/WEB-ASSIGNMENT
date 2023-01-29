@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                margin: 3em;
+                padding: 0;
+                font-family: sans-serif;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            h1 {
+                line-height: 1.25;
+                margin: 1em 0 0;
+            }
+            p {
+                margin: 0.5em 0;
+            }
+
+            #switcher {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            #switcher li {
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin: 0 15px 15px 0;
+                border-radius: 18px;
+                border: 3px solid black;
+            }
+
+            #grayButton {
+                background: gray;
+            }
+            #whiteButton {
+                background: white;
+            }
+            #blueButton {
+                background: blue;
+            }
+            #yellowButton {
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="switcher">
+            <li onclick="switchGray()" id="grayButton"></li>
+            <li onclick="switchWhite()" id="whiteButton"></li>
+            <li onclick="switchBlue()" id="blueButton"></li>
+            <li onclick="switchYellow()" id="yellowButton"></li>
+        </ul>
+
+        <h1>Color Scheme Switcher</h1>
+
+        <p>
+            Try clicking on one of the colors above to change the colors on this
+            page!
+        </p>
+    </body>
+    <script>
+        function switchGray() {
+            document.getElementsByTagName("body")[0].style.backgroundColor =
+                "gray";
+        }
+        function switchWhite() {
+            document.getElementsByTagName("body")[0].style.backgroundColor =
+                "white";
+            document.getElementsByTagName("body")[0].style.color = "black";
+        }
+
+        function switchBlue() {
+            document.getElementsByTagName("body")[0].style.backgroundColor =
+                "blue";
+            document.getElementsByTagName("body")[0].style.color = "white";
+        }
+        function switchYellow() {
+            document.getElementsByTagName("body")[0].style.backgroundColor =
+                "yellow";
+            document.getElementsByTagName("body")[0].style.color = "black";
+        }
+    </script>
+</html>

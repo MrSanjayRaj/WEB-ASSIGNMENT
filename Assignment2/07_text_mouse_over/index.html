@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text On Mouse Events</title>
+    <script>
+        function onOver(x) {
+            x.innerHTML = "Welcome User...";
+        }
+
+        function onOut() {
+            document.getElementById("text").innerHTML = "Put The Cursor On Text To See Change.";
+        }
+    </script>
+
+</head>
+
+<body>
+    <h2>Change Text On Mouse Events</h2>
+    <u id="text" onmouseover="onOver(this)" onmouseout="onOut()" style="font-size : 26">Put The Cursor On Text To See
+        Change.</u>
+</body>
+
+</html>

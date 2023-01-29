@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Register</title>
+    <script>
+        function validateForm() {
+            var check = true;
+            if (document.getElementById("name").value == "") {
+                alert("Username can't be empty!");
+                check = false;
+            }
+            if (document.getElementById("pass").value !=
+                document.getElementById("conPass").value) {
+                alert("Password mismatch!");
+                check = false;
+            }
+            29
+            if (check) {
+                document.write("Validation Successful...");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <h4>Student Register Form</h4>
+        <div class="first">
+            <form>
+                <input type="text" id="name" placeholder="First Name"> <br />
+                <input type="text" placeholder="Second Name"> <br />
+                <input type="text" placeholder="Father Name"> <br />
+                <input type="text" placeholder="Mother Name"> <br />
+                <input type="email" placeholder="Email"> <br />
+                <input type="password" id="pass" placeholder="Password" required> <br />
+                <input type="password" id="conPass" placeholder="Confirm Password"> <br />
+                <button onclick="validateForm()">Register</button>
+                <hr>
+                <p>If you are alredy Register <br> <b><u> Log in </u></b></p>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
